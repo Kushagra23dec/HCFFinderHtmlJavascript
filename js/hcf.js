@@ -1,6 +1,4 @@
  
-
- 
 function f (){
  
 
@@ -17,20 +15,21 @@ hcfFunction(no1,no2);
 
 
 function hcfFunction(a,b){
-
-    console.log(a);
-    console.log("*************************");
-var p = 0;
-     
+ 
 let i,j=1;
-for(i=2;i<=b;i++){
+if(a<b)
+{ c = a;} 
+else
+{ c = b;}
+
+for(i=2;i<=c;i++){
 
     if(a%i==0 && b%i==0){
-        j= i;
+        j = i;
     }
 }
 
-document.getElementById("result").innerText = "<h1>" + j + "</h1>";
+document.getElementById("result").innerText = j ;
 
 
 
